@@ -57,6 +57,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var cheerio = require("cheerio");
 function directFetchWebPage(url) {
+    if (!url) {
+        throw new Error("Provide valid url");
+    }
     return axios_1.default.request({
         url: url,
         method: 'GET',
@@ -80,6 +83,9 @@ function convertObjToQueryStr(obj) {
 }
 function fetchAPISheetData(docId, chunkIds, snapshotAt, smv) {
     if (smv === void 0) { smv = 69; }
+    if (!docId) {
+        throw new Error("Provide valid docId");
+    }
     var rowsPath = "https://docs.google.com/spreadsheets/d/" + docId + "/streamrows?id=" + docId + "&smv=" + smv;
     var formData = {
         chunks: JSON.stringify(chunkIds),

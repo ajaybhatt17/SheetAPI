@@ -26,7 +26,8 @@
     "clean": "./node_modules/.bin/rimraf dist/*",
     "bundle": "./node_modules/.bin/browserify dist/sheet-api.js -o dist/sheet-api.bundle.js",
     "bundle:minify": "./node_modules/.bin/minify dist/sheet-api.bundle.js --out-file dist/sheet-api.bundle.min.js --mangle.keepClassName && ./node_modules/.bin/rimraf dist/sheet-api.bundle.js",
-    "demo-site": "cp -f dist/sheet-api.bundle.min.js demo/ && http-server demo/"
+    "demo-site": "cp -f dist/sheet-api.bundle.min.js demo/ && http-server demo/",
+    "prepublish": "npm run test && npm run build"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.3",

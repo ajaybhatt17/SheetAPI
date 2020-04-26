@@ -4,3 +4,6 @@ lib/
 tsconfig.json
 tslint.json
 .babelrc
+.idea/
+data/
+demo/

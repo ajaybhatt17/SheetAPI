@@ -30,6 +30,9 @@ interface SnapshotData {
 }
 
 function directFetchWebPage(url: string) {
+    if (!url) {
+      throw new Error("Provide valid url");
+    }
     return axios.request({
         url: url,
         method: 'GET',
@@ -54,6 +57,9 @@ function convertObjToQueryStr(obj: any) {
 }
 
 function fetchAPISheetData(docId: string, chunkIds: string[], snapshotAt: number, smv: number = 69) {
+    if (!docId) {
+      throw new Error("Provide valid docId");
+    }
     var rowsPath = `https://docs.google.com/spreadsheets/d/${docId}/streamrows?id=${docId}&smv=${smv}`;
     var formData = {
       chunks: JSON.stringify(chunkIds),
