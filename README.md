@@ -20,7 +20,9 @@ spreadSheetUrl Format - https://docs.google.com/spreadsheets/d/{DOCID}/edit
 <script src="sheet-min.js"/>
 <script>
 var spreadSheetUrl = "";
-var data = new Sheet(spreadSheetUrl).fetchData();
+new Sheet(spreadSheetUrl).fetchData().then(function(data) {
+    console.log(data);
+});
 </script>
 
 ``` 
