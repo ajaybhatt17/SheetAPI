@@ -44,10 +44,6 @@ ResponseData {
 
 Refer to demo folder
 
-## Author
-
-[Ajay Bhatt](@ajaybhatt17)
-
 ## License
 
 [BSD](./LICENSE)
