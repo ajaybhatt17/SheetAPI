@@ -1,0 +1,6 @@
+test/
+jest.config.js
+lib/
+tsconfig.json
+tslint.json
+.babelrc
