@@ -2,7 +2,7 @@
 
 Get google spreadsheet data as api response.
 
-[![npm module](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.1&x2=0)](https://www.npmjs.org/package/sheet-api)
+[![npm module](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.3&x2=0)](https://www.npmjs.org/package/sheet-api)
 
 
 ## Setup

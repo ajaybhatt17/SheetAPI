@@ -1,6 +1,6 @@
 {
   "name": "sheet-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get google spreadSheet data as API",
   "main": "dist/sheet-api.js",
   "license": "BSD",
